@@ -19,17 +19,19 @@
         />
         <label for="fromCurrency">Из валюты:</label>
         <select id="fromCurrency">
-          <option value="KZT">Тенге</option>
-          <option value="USD">Доллар</option>
-          <option value="EUR">Евро</option>
+          <option value="KZT">KZT</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
         </select>
         <label for="toCurrency">В валюту:</label>
         <select id="toCurrency">
-          <option value="KZT">Тенге</option>
-          <option value="USD">Доллар</option>
-          <option value="EUR">Евро</option>
+          <option value="KZT">KZT</option>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
         </select>
         <button onclick="convertCurrency ()">Конвертировать</button>
+        <div id="converterResult"></div>
+        <div id="converterError"></div>
       </div>
     </div>
     <script src="./script.js"></script>
