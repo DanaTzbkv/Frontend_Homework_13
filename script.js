@@ -8,12 +8,6 @@ function convertCurrency () {
 
     let api = `https://v6.exchangerate-api.com/v6/e4e727bf8593a093bbbd574f/latest/${fromCurrency}`;
 
-    if (!isValidInput (amount)) {
-        converterResult.innerHTML = "";
-        converterError.innerHTML = "Введите только числовое значение";
-        return;
-    }
-
     function isValidInput (input) {
         return !isNaN (parseFloat(input));
     }
